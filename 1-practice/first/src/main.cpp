@@ -1,9 +1,9 @@
 #include <iostream>
 
-void Log(const char* message);
+void FancyLog(const char* message);
 
 int main() {
 		std::cout << "Hello, World!" << std::endl;
-		Log("Hello, World!");
+		FancyLog("Hello, World!");
 		return 0;
 }
