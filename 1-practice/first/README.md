@@ -12,3 +12,7 @@
 
 - [C++ Header Files (The Cherno)](https://www.youtube.com/watch?v=9RJTQmK0YPI&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=10)
 - [C++ Full Course for free ⚡️](https://youtu.be/-TkoO8Z07hI?si=OAfnOROPR4kafzm6&t=6917)
+
+## Other links
+
+[V511. The sizeof() operator returns pointer size instead of array size.](https://pvs-studio.com/en/docs/warnings/v511/)

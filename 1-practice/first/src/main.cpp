@@ -8,7 +8,8 @@
 // #include "random-example.h"
 // #include "while-loop-input-example.h"
 // #include "overloded-fn-and-random-int-example.h"
-#include "rock-paper-scissors-game.h"
+// #include "rock-paper-scissors-game.h"
+#include "bubble-sort.h"
 
 // void FancyLog(const char *message);
 
@@ -39,7 +40,8 @@ int main()
 	// namespacesExample();
 	// whileLoopInputExample();
 	// numberGuessingGame();
-	RockPaperScissorsGame();
+	// RockPaperScissorsGame();
+	bubbleSortExample();
 
 	// This is an example of a vector.
 	// A vector is a dynamic array is an array that can change in size.
