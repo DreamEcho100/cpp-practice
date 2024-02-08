@@ -11,7 +11,7 @@
 ## Stopped at
 
 - [C++ Header Files (The Cherno)](https://www.youtube.com/watch?v=9RJTQmK0YPI&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb&index=10)
-- [C++ Full Course for free ⚡️](https://youtu.be/-TkoO8Z07hI?si=YEWlLRqIAmx6coiN&t=12575)
+- [C++ Full Course for free ⚡️](https://youtu.be/-TkoO8Z07hI?si=Mum1FXNQnhYcmqOg)
 
 ## Other links
 
