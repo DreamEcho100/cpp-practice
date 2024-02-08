@@ -1,13 +1,28 @@
 #include <iostream>
 #include <vector>
-#include <tuple>
 
+using std::cin;
+using std::cout;
+using std::endl;
 using std::string;
 using std::vector;
 
 void RockPaperScissorsGame()
 {
 	string choices[] = {"rock", "paper", "scissors"};
+
+	cout << "Rock, Paper, Scissors Game" << endl;
+	cout << "--------------------------" << endl;
+	cout << "Rules:" << endl;
+	cout << "Rock beats scissors" << endl;
+	cout << "Scissors beats paper" << endl;
+	cout << "Paper beats rock" << endl;
+	cout << "--------------------------" << endl;
+
+	// The following gave the right size of the array.
+	cout << "Choices sizes: " << sizeof(choices) / sizeof(string) << endl;
+	cout << "Choices sizes: " << sizeof(choices) / sizeof(choices[0]) << endl;
+	// cout << "Choices sizes: " << choices->length() << endl;
 
 	string choicesComputerResponses[3][3] = {
 			{"paper", "scissors", "rock"}, // rock
@@ -22,12 +37,12 @@ void RockPaperScissorsGame()
 
 	do
 	{
-		std::cout << "Choose (1) rock, (2) paper, or (3) scissors." << std::endl;
-		std::cin >> userChoiceIndex;
+		cout << "Choose (1) rock, (2) paper, or (3) scissors." << endl;
+		cin >> userChoiceIndex;
 
 		if (userChoiceIndex < 1 || userChoiceIndex > 3)
 		{
-			std::cout << "Invalid choice." << std::endl;
+			cout << "Invalid choice." << endl;
 		}
 		else
 		{
@@ -35,27 +50,27 @@ void RockPaperScissorsGame()
 			srand(time(NULL));
 			computerChoiceIndex = rand() % 3;
 
-			std::cout
+			cout
 					<< "You chose "
 					<< choices[userChoiceIndex]
 					<< " and the computer chose "
-					<< choicesComputerResponses[userChoiceIndex][computerChoiceIndex] << std::endl;
+					<< choicesComputerResponses[userChoiceIndex][computerChoiceIndex] << endl;
 
 			switch (computerChoiceIndex)
 			{
 			case 0:
-				std::cout << "You loose" << std::endl;
+				cout << "You loose" << endl;
 				break;
 			case 1:
-				std::cout << "You win" << std::endl;
+				cout << "You win" << endl;
 				break;
 			case 2:
-				std::cout << "You tie" << std::endl;
+				cout << "You tie" << endl;
 				break;
 			}
 
-			std::cout << "Do you want to play again? (y/n)" << std::endl;
-			std::cin >> playAgain;
+			cout << "Do you want to play again? (y/n)" << endl;
+			cin >> playAgain;
 
 			if (playAgain == 'n')
 			{
