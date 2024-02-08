@@ -5,15 +5,6 @@
 using std::string;
 using std::vector;
 
-/**
- * Summerize the following to one sententce
- * Refactor main.cpp to remove unused includes and commented-out code
-
-Remove unused includes and commented-out code to declutter and improve code readability and maintainability.
-Issue #23
-
-*/
-
 void RockPaperScissorsGame()
 {
 	vector<string> choices = {"rock", "paper", "scissors"};
