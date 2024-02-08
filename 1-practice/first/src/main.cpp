@@ -8,7 +8,7 @@
 // #include "random-example.h"
 // #include "while-loop-input-example.h"
 // #include "overloded-fn-and-random-int-example.h"
-// #include "rock-paper-scissors-game.h"
+#include "rock-paper-scissors-game.h"
 
 // void FancyLog(const char *message);
 
@@ -37,9 +37,9 @@ int main()
 	// std::cout << "getRandomInt(10): " << getRandomInt(10) << ", " << getRandomInt(10) << std::endl;
 	// FancyLog("Hello, World!");
 	// namespacesExample();
-	// RockPaperScissorsGame();
 	// whileLoopInputExample();
 	// numberGuessingGame();
+	RockPaperScissorsGame();
 
 	// This is an example of a vector.
 	// A vector is a dynamic array is an array that can change in size.

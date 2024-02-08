@@ -7,16 +7,13 @@ using std::vector;
 
 void RockPaperScissorsGame()
 {
-	vector<string> choices = {"rock", "paper", "scissors"};
+	string choices[] = {"rock", "paper", "scissors"};
 
-	vector<string> rockChoiceComputerResponses = {"paper", "scissors", "rock"};
-	vector<string> paperChoiceComputerResponses = {"scissors", "rock", "paper"};
-	vector<string> scissorsChoiceComputerResponses = {"rock", "paper", "scissors"};
-	vector<vector<string>>
-			choicesComputerResponses = {
-					rockChoiceComputerResponses,
-					paperChoiceComputerResponses,
-					scissorsChoiceComputerResponses};
+	string choicesComputerResponses[3][3] = {
+			{"paper", "scissors", "rock"}, // rock
+			{"scissors", "rock", "paper"}, // paper
+			{"rock", "paper", "scissors"}	 // scissors
+	};
 
 	int userChoiceIndex;
 	int computerChoiceIndex;
@@ -42,7 +39,7 @@ void RockPaperScissorsGame()
 					<< "You chose "
 					<< choices[userChoiceIndex]
 					<< " and the computer chose "
-					<< (choicesComputerResponses.at(userChoiceIndex))[computerChoiceIndex] << std::endl;
+					<< choicesComputerResponses[userChoiceIndex][computerChoiceIndex] << std::endl;
 
 			switch (computerChoiceIndex)
 			{
