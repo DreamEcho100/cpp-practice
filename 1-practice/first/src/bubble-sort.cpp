@@ -9,14 +9,18 @@
  * The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
  * It is not the most efficient algorithm, but it is a good example of how a simple algorithm can be implemented.
  */
-void bubbleSort(int arr[], size_t size)
+void bubbleSort(int arr[], int size)
 {
 
 	int temp;
 
-	for (int i = 0; i < size - 1; i++)
+	int i = 0;
+	int j = 0;
+
+	for (; i < size - 1; i++)
 	{
-		for (int j = 0; j < size - 1; j++)
+		j = 0;
+		for (; j < size - 1; j++)
 		{
 			if (arr[j] > arr[j + 1])
 			{
@@ -30,21 +34,26 @@ void bubbleSort(int arr[], size_t size)
 	// return arr;
 }
 
-void bubbleSortExample()
+void printArray(int arr[], int size)
 {
-	int arr[] = {64, 34, 25, 12, 22, 11, 90};
-	size_t n = sizeof(arr) / sizeof(arr[0]);
-	printf("Before sorting the array: \n");
-	for (int i = 0; i < n; i++)
+	int i = 0;
+	for (; i < size; i++)
 	{
 		printf("%d ", arr[i]);
 	}
 	printf("\n");
-	bubbleSort(arr, n);
+}
+
+void bubbleSortExample()
+{
+	int arr[] = {64, 34, 25, 12, 22, 11, 90};
+	size_t size = sizeof(arr) / sizeof(arr[0]);
+
+	printf("Before sorting the array: \n");
+	printArray(arr, size);
+
+	bubbleSort(arr, size);
+
 	printf("Sorted array: \n");
-	for (int item : arr)
-	{
-		printf("%d ", item);
-	}
-	printf("\n");
+	printArray(arr, size);
 }
