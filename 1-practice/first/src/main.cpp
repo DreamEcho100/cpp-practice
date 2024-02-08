@@ -3,11 +3,12 @@
 #include <vector>
 #include <ctime>
 
-#include "fancy-log.h"
-#include "namespaces-example.h"
-#include "random-example.h"
-#include "while-loop-input-example.h"
-#include "overloded-fn-and-random-int-example.h"
+// #include "fancy-log.h"
+// #include "namespaces-example.h"
+// #include "random-example.h"
+// #include "while-loop-input-example.h"
+// #include "overloded-fn-and-random-int-example.h"
+// #include "rock-paper-scissors-game.h"
 
 // void FancyLog(const char *message);
 
@@ -32,10 +33,11 @@ int main()
 	// And use std::endl for flushing the buffer.
 	std::cout << "Hello, World!" << std::endl;
 
-	std::cout << "getRandomInt  " << getRandomInt() << ", " << getRandomInt() << std::endl;
-	std::cout << "getRandomInt(10): " << getRandomInt(10) << ", " << getRandomInt(10) << std::endl;
-	FancyLog("Hello, World!");
-	namespacesExample();
+	// std::cout << "getRandomInt  " << getRandomInt() << ", " << getRandomInt() << std::endl;
+	// std::cout << "getRandomInt(10): " << getRandomInt(10) << ", " << getRandomInt(10) << std::endl;
+	// FancyLog("Hello, World!");
+	// namespacesExample();
+	// RockPaperScissorsGame();
 	// whileLoopInputExample();
 	// numberGuessingGame();
 
